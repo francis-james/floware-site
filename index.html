@@ -1,26 +1,91 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Floware</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">This</a></li>
-	        	<li><a href="/about">is</a></li>
-        		<li><a href="/cv">a</a></li>
-        		<li><a href="/blog">test</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li>email</li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flotive - Smarter Inventory Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Flotive</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="video-container">
+            <video class="background-video" autoplay muted loop>
+                <source src="assets/foklift.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <div class="container">
+                    <h2>Effortless Inventory Tracking with Flotive</h2>
+                    <p>Combining vision, RFID, and robotics for unparalleled inventory insights.</p>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Flotive</h2>
+            <p>Flotive revolutionizes inventory management by integrating cutting-edge technologies to offer real-time, accurate, and efficient tracking solutions.</p>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h3>Vision-Based Insights</h3>
+                    <p>Leverage advanced computer vision to monitor and analyze inventory data.</p>
+                </div>
+                <div class="feature">
+                    <h3>RFID Integration</h3>
+                    <p>Track items seamlessly with state-of-the-art RFID technology.</p>
+                </div>
+                <div class="feature">
+                    <h3>Robotics Support</h3>
+                    <p>Automate inventory processes using intelligent robotics solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Flotive. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
